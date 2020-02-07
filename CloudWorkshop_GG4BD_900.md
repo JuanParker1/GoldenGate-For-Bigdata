@@ -74,12 +74,12 @@ SQL>
 
 ```
 
-![](images/900/2.png)
+![](2.png)
 
 
 ##### 4. Alter session and set the container to pdb1 and current working schema as employees
 
-![](images/900/3.png)
+![](3.png)
 
 
 ```
