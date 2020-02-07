@@ -1,5 +1,5 @@
 
-# Lab 900 -  Oracle to Kafka (json format) / EventHub
+# Lab 1 -  Oracle to Kafka (json format) / EventHub
 
 ## Before You Begin
 - We should have Oracle installed on the source compute instance.
