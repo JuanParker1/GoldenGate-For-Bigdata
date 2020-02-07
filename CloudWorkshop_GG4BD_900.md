@@ -395,7 +395,7 @@ bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-fac
 
 ##### 5. View the records being added to the Kafka topic.These are the same records inserted into the economic_entity table in the Oracle Database in the previous steps.
 
-![](images/900/4.png)
+![](4.png)
 
 ##### 6. Test by inserting more records
 To test more, insert more records into the economic_entity table in the Oracle Database.Make sure that the Zookeeper server,Kafka server and Kafka consumer for topic "oracle" are up and running during this time.You will see the inserted data being added to the oracle topic in the consumer.
