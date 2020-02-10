@@ -1,4 +1,26 @@
 # Oracle to AWS Kinesis Replication.
+
+# Prerequisites-
+Create a Kinesis data stream(not included under Free-tier)on your AWS Instance, Follow the link for reference-
+https://docs.aws.amazon.com/streams/latest/dev/learning-kinesis-module-one-create-stream.html
+
+It is strongly recommended that you do not use the AWS account root user or ec2-user for your everyday tasks, even the administrative ones. You need to create a new user with access key & secret_key for AWS, use the following link as reference to do the same :
+           https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html
+
+Attach the following policies to the newly created user to allow access and GET/Put Operations on Kinesis data stream:
+AWSLambdaKinesisExecutionRole-Predefined Policy in AWS
+You need to attach the following inline policy as json:
+```
+"Version": "2012-10-17",
+ "Statement": [
+   {
+   "Effect": "Allow",
+     "Action": "kinesis:*",
+     "Resource": [
+       "arn:aws:kinesis:<your-aws-region>:<aws-account-id>:stream/<kinesis-stream-name>"
+     ]
+   }
+```
 Now we will be working on the Target machine.We have a trail file created in the GGBD home in the /dirdat/oraTrails directory with the name tr. We will be using this trail file to send to a Kinesis Stream.
 
 1. Copy the kinesis.props & kinesis.prm file to dirprm folder in your Golden Gate installation folder in your target machine from ./dirprm Directory.
