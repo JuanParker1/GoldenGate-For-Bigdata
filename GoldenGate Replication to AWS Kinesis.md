@@ -8,6 +8,8 @@ Copy paste the below text in kinesis.props.
 ![](kineisis_1.PNG)
 
 ## KINESIS properties for Kafka Topic apply
+
+```
 gg.handlerlist=kinesis
 gg.handler.kinesis.type=kinesis_streams
 gg.handler.kinesis.mode=op
@@ -33,7 +35,10 @@ gg.classpath=<path-to-your-aws-java-sdk>/aws-java-sdk-1.11.429/lib/*:<path-to-yo
 ##Configured with access id and secret key configured elsewhere
 javawriter.bootoptions=-Xmx512m -Xms32m -Djava.class.path=ggjava/ggjava.jar
 ##Configured with access id and secret key configured here
-javawriter.bootoptions=-Xmx512m -Xms32m -Djava.class.path=ggjava/ggjava.jar -Daws.accessKeyId=<access-key-of-new-created-user> -Daws.secretKey=<secret-ke-new-created-user>Save the text using wq!
+javawriter.bootoptions=-Xmx512m -Xms32m -Djava.class.path=ggjava/ggjava.jar -Daws.accessKeyId=<access-key-of-new-created-user> -Daws.secretKey=<secret-ke-new-created-user>
+
+```
+Save the text using wq!
 
 2. Add the replicat with the below commands.
 REPLICAT kinesis
