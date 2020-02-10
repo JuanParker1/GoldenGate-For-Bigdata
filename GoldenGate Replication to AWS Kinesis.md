@@ -2,12 +2,13 @@
 Now we will be working on the Target machine.We have a trail file created in the GGBD home in the /dirdat/oraTrails directory with the name tr. We will be using this trail file to send to a Kafka topic.
 
 1. Copy the kinesis.props & kinesis.prm file to dirprm folder in your Golden Gate installation folder in your target machine from ./dirprm Directory.
+![](kineisis_1.PNG)
 ```
 [oracle@gg4bd-target01 ggbd_home1]$ cd dirprm
 [oracle@gg4bd-target01 dirprm]$ vi kinesis.props
 ```
 Copy paste the below text in kinesis.props.
-![](kineisis_1.PNG)
+
 
 ## KINESIS properties for Kafka Topic apply
 
@@ -43,6 +44,7 @@ javawriter.bootoptions=-Xmx512m -Xms32m -Djava.class.path=ggjava/ggjava.jar -Daw
 Save the text using wq!
 
 2. Add the replicat with the below commands.
+```
 REPLICAT kinesis
 -- Trail file for this example is located in "AdapterExamples/trail" directory
 -- Command to add REPLICAT
@@ -51,7 +53,7 @@ TARGETDB LIBFILE libggjava.so SET property=dirprm/kinesis.props
 REPORTCOUNT EVERY 1 MINUTES, RATE
 GROUPTRANSOPS 1
 MAP QASOURCE.*, TARGET QASOURCE.*;
-
+```
 3. Add the replicat with the below command.
 add replicat kinesis, exttrail ./dirdat/oraTrails/tr
 
