@@ -46,6 +46,7 @@ In the last Lab, we learnt how to extract data from Oracle Database and write it
 Now we will be working on the Target machine.We have a trail file created in the GGBD home in the /dirdat/oraTrails directory with the name tr. We will be using this trail file to send to a AWS S3.
 
 1. Kindly create S3 props and prm files under dirprm goldengate home directory
+
 ```
 [oracle@gg4bd-target01 ggbd_home1]$ cd dirprm
 [oracle@gg4bd-target01 dirprm]$ vi s3.props
@@ -111,8 +112,10 @@ GROUPTRANSOPS 1
 MAP pdb1.employees.economic_entity, TARGET oracle.*;
 ```
 3. Add the replicat with the below command.
+
 ```
 add replicat s3, exttrail ./dirdat/oraTrails/tr
+
 ```
 4. Crosscheck for AWS S3 replicat’s status, RBA and stats.
 Once you get the stats, you can view the s3.log from. /dirrpt directory which gives information about data sent to kinesis data stream and operations performed.
