@@ -21,7 +21,7 @@ AWSLambdaKinesisExecutionRole-Predefined Policy in AWS.
        "arn:aws:kinesis:<your-aws-region>:<aws-account-id>:stream/<kinesis-stream-name>"
      ]
    }
-```-
+```
 
 
 ### Introduction
