@@ -50,4 +50,5 @@ add replicat kinesis, exttrail ./dirdat/oraTrails/tr
 
 4. Crosscheck for kinesis replicat’s status, RBA and stats.
 Once you get the stats, you can view the kinesis.log from. /dirrpt directory which gives information about data sent to kinesis data stream and operations performed.
-kinesis_log[1].png
+![](kinesis_log[1].png)
+
