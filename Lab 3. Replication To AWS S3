@@ -8,6 +8,7 @@ https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html
 AmazonS3FullAccess in AWS.
 
 -You need to attach the following inline policy as json:
+
 ```
 {
   "Version": "2012-10-17",
@@ -20,6 +21,7 @@ AmazonS3FullAccess in AWS.
       ]
    }
 }
+
 ```
 
 
@@ -47,6 +49,7 @@ Now we will be working on the Target machine.We have a trail file created in the
 ```
 [oracle@gg4bd-target01 ggbd_home1]$ cd dirprm
 [oracle@gg4bd-target01 dirprm]$ vi s3.props
+
 ```
 Copy paste the below text in s3.props.
 
