@@ -43,7 +43,7 @@ javawriter.bootoptions=-Xmx512m -Xms32m -Djava.class.path=ggjava/ggjava.jar -Daw
 ```
 Save the text using wq!
 
-2. Add the replicat with the below commands.
+2. Edit the Replicat Parameter file to include the schema_name & table_name that needs to be replicated.
 ```
 REPLICAT kinesis
 -- Trail file for this example is located in "AdapterExamples/trail" directory
@@ -52,11 +52,12 @@ REPLICAT kinesis
 TARGETDB LIBFILE libggjava.so SET property=dirprm/kinesis.props
 REPORTCOUNT EVERY 1 MINUTES, RATE
 GROUPTRANSOPS 1
-MAP QASOURCE.*, TARGET QASOURCE.*;
+MAP pdb1.employees.economic_entity, TARGET oracle.*;
 ```
 3. Add the replicat with the below command.
+```
 add replicat kinesis, exttrail ./dirdat/oraTrails/tr
-
+```
 4. Crosscheck for kinesis replicat’s status, RBA and stats.
 Once you get the stats, you can view the kinesis.log from. /dirrpt directory which gives information about data sent to kinesis data stream and operations performed.
 ![](kinesis_log[1].png)
