@@ -1,4 +1,4 @@
-Replicat from trail files on the target machine to AWS Kinesis.
+# Oracle to AWS Kinesis Replication.
 Now we will be working on the Target machine.We have a trail file created in the GGBD home in the /dirdat/oraTrails directory with the name tr. We will be using this trail file to send to a Kafka topic.
 
 1. Copy the kinesis.props & kinesis.prm file to dirprm folder in your Golden Gate installation folder in your target machine from ./.
@@ -6,7 +6,7 @@ Now we will be working on the Target machine.We have a trail file created in the
 [oracle@gg4bd-target01 dirprm]$ vi kinesis.props
 Copy paste the below text in kinesis.props.
 
-## RKINESIS properties for Kafka Topic apply
+## KINESIS properties for Kafka Topic apply
 gg.handlerlist=kinesis
 gg.handler.kinesis.type=kinesis_streams
 gg.handler.kinesis.mode=op
@@ -49,4 +49,4 @@ add replicat kinesis, exttrail ./dirdat/oraTrails/tr
 
 4. Crosscheck for kinesis replicat’s status, RBA and stats.
 Once you get the stats, you can view the kinesis.log from. /dirrpt directory which gives information about data sent to kinesis data stream and operations performed.
-![](kinesis_1.png)
+![](/kinesis_1.png)
