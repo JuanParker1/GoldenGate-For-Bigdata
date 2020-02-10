@@ -8,7 +8,8 @@ It is strongly recommended that you do not use the AWS account root user or ec2-
            https://docs.aws.amazon.com/general/latest/gr/managing-aws-access-keys.html
 
 Attach the following policies to the newly created user to allow access and GET/Put Operations on Kinesis data stream:
-AWSLambdaKinesisExecutionRole-Predefined Policy in AWS
+AWSLambdaKinesisExecutionRole-Predefined Policy in AWS.
+
 You need to attach the following inline policy as json:
 ```
 "Version": "2012-10-17",
