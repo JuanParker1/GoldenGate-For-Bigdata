@@ -14,7 +14,7 @@ Welcome to the Golden Gate for Big Data Workshop. The content will give you a ba
 -  Lab 3 - Replication To AWS Kinesis
 
 ## Workshop architecture
-![](images/architecture.png)
+![](images/architecture.PNG)
 
 - Source: Oracle Database
 - Target: Kafka, AWS S3 & AWS Kinesis
