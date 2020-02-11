@@ -26,11 +26,13 @@ Welcome to the Golden Gate for Big Data Workshop. The content will give you a ba
 
 ## Lab 1 - Oracle to Kafka
 
-**Documentation**: [CloudWorkshop\GoldenGate-For-Bigdata\Lab 1. Replication To Kafka.md](CloudWorkshop\GoldenGate-For-Bigdata\Lab 1. Replication To Kafka.md)
+**Documentation**: Lab 1. Replication To Kafka.md
 
 ### Objectives
 -   Extract from Oracle to generate the Trail Files on Source
 -   Dump the trail files from Source to target machine
 -   Replicate from trail files on the target machine to Kafka topic.
 ## Lab 2 - Replication To AWS S3
+**Documentation**: Lab 2. Replication To AWS S3.md
 ## Lab 3 - Replication TO AWS Kinesis
+**Documentation**: Lab 3. Replication To AWS Kinesis.md
