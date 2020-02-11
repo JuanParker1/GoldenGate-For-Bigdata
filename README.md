@@ -26,7 +26,7 @@ Welcome to the Golden Gate for Big Data Workshop. The content will give you a ba
 
 ## Lab 1 - Oracle to Kafka
 
-**Documentation**: [shrinidhi04/GoldenGate-For-Bigdata\_1.md](CloudWorkshop\_GG4BD\_900.md)
+**Documentation**: [https://github.com/shrinidhi04/GoldenGate-For-Bigdata/blob/master/Lab%201.%20Replication%20%20To%20Kafka.md](CloudWorkshop\_GG4BD\_900.md)
 
 ### Objectives
 -   Extract from Oracle to generate the Trail Files on Source
