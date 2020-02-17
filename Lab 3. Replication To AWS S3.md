@@ -95,7 +95,7 @@ gg.report.time=30sec
 gg.classpath=/u01/app/aws/aws-java-sdk-1.11.718/lib/*:/u01/app/aws/aws-java-sdk-1.11.718/third-party/lib/*
 
 #Set the heap memory
-javawriter.bootoptions=-Xmx512m -Xms32m -Djava.class.path=.:ggjava/ggjava.jar:./dirprm -Daws.accessKeyId=AKIAID3OPBE4LKHGWPNQ -Daws.secretKey=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
+javawriter.bootoptions=-Xmx512m -Xms32m -Djava.class.path=.:ggjava/ggjava.jar:./dirprm -Daws.accessKeyId=<access-key-of-new-created-user> -Daws.secretKey=<secret-ke-new-created-user>
 
 ```
 Save the text using wq!
